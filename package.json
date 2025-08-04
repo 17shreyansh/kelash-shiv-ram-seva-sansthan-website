@@ -16,11 +16,15 @@
     "react-scroll": "^1.9.3",
     "swiper": "^11.2.10"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "npx serve -s build -l 3000",
+    "deploy": "vercel --prod",
+    "build:analyze": "npm run build && npx serve -s build"
   },
   "devDependencies": {
     "react-scripts": "5.0.1"
