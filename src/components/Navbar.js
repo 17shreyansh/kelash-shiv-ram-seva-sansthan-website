@@ -42,17 +42,17 @@ const Navbar = () => {
     <nav className={getNavbarClass()}>
       <div className="container">
         <Link className="navbar-brand" to="/">
-           Kailashpur Shiv Ram Trust
+          Kailashpur Shiv Ram Sewa Sansthan
         </Link>
-        
-        <button 
-          className="navbar-toggler d-lg-none" 
-          type="button" 
+
+        <button
+          className="navbar-toggler d-lg-none"
+          type="button"
           onClick={toggleSidebar}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        
+
         {/* Desktop Menu */}
         <div className="collapse navbar-collapse d-none d-lg-block">
           <ul className="navbar-nav ms-auto">
@@ -94,7 +94,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        
+
         {/* Mobile Sidebar */}
         <div className={`mobile-sidebar ${isSidebarOpen ? 'open' : ''}`}>
           <div className="sidebar-header">
@@ -103,9 +103,9 @@ const Navbar = () => {
           </div>
           <div className="sidebar-content">
             <Link className="sidebar-link" to="/" onClick={closeSidebar}>Home</Link>
-            
+
             <div className="sidebar-dropdown">
-              <button 
+              <button
                 className={`sidebar-dropdown-btn ${activeDropdown === 'about' ? 'active' : ''}`}
                 onClick={() => toggleDropdown('about')}
               >
@@ -119,9 +119,9 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            
+
             <div className="sidebar-dropdown">
-              <button 
+              <button
                 className={`sidebar-dropdown-btn ${activeDropdown === 'kailashpur' ? 'active' : ''}`}
                 onClick={() => toggleDropdown('kailashpur')}
               >
@@ -133,11 +133,11 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            
+
             <Link className="sidebar-link" to="/donation" onClick={closeSidebar}>Donation</Link>
-            
+
             <div className="sidebar-dropdown">
-              <button 
+              <button
                 className={`sidebar-dropdown-btn ${activeDropdown === 'gallery' ? 'active' : ''}`}
                 onClick={() => toggleDropdown('gallery')}
               >
@@ -150,11 +150,11 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            
+
             <Link className="sidebar-link" to="/contact" onClick={closeSidebar}>Contact Us</Link>
           </div>
         </div>
-        
+
         {/* Sidebar Overlay */}
         {isSidebarOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
       </div>

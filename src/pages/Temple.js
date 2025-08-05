@@ -6,104 +6,79 @@ const Temple = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="section-title">Our Temple</h1>
+            <h1 className="section-title">कैलाशपुर के बारे में</h1>
             <div className="text-center mb-5">
               <p className="lead" style={{fontSize: '1.2rem', color: 'var(--primary)'}}>
-                A Sacred Place of Worship and Devotion
+                एक गौरवशाली गाँव की कहानी
               </p>
             </div>
-          </div>
-        </div>
-        
-        <div className="row align-items-center mb-5">
-          <div className="col-lg-6">
-            <div className="custom-card p-4">
-              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>Temple Architecture</h2>
-              <p className="lead">Our temple represents the traditional Hindu architectural style with modern amenities for devotees.</p>
-              <p>The temple complex includes the main sanctum sanctorum, prayer halls, and facilities for various religious ceremonies. The architecture follows ancient Vastu principles while incorporating contemporary safety and accessibility features.</p>
-              <p>The temple is designed to create a peaceful and spiritual atmosphere where devotees can connect with the divine and find inner peace.</p>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <img src="https://via.placeholder.com/500x400?text=Temple+Architecture" alt="Temple Architecture" className="img-fluid rounded shadow" />
-          </div>
-        </div>
-        
-        <div className="row align-items-center mb-5">
-          <div className="col-lg-6 order-lg-2">
-            <div className="custom-card p-4">
-              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>Daily Worship Schedule</h2>
-              <div className="worship-schedule">
-                <div className="schedule-item mb-3 d-flex align-items-center">
-                  <span className="time-icon me-3" style={{fontSize: '1.5rem'}}>🌅</span>
-                  <div>
-                    <strong>Morning Aarti:</strong> 6:00 AM - 7:00 AM<br/>
-                    <small className="text-muted">Mangal Aarti and morning prayers</small>
-                  </div>
-                </div>
-                <div className="schedule-item mb-3 d-flex align-items-center">
-                  <span className="time-icon me-3" style={{fontSize: '1.5rem'}}>☀️</span>
-                  <div>
-                    <strong>Morning Darshan:</strong> 7:00 AM - 12:00 PM<br/>
-                    <small className="text-muted">Open for devotees and prayers</small>
-                  </div>
-                </div>
-                <div className="schedule-item mb-3 d-flex align-items-center">
-                  <span className="time-icon me-3" style={{fontSize: '1.5rem'}}>🌆</span>
-                  <div>
-                    <strong>Evening Darshan:</strong> 4:00 PM - 8:00 PM<br/>
-                    <small className="text-muted">Evening prayers and devotion</small>
-                  </div>
-                </div>
-                <div className="schedule-item mb-3 d-flex align-items-center">
-                  <span className="time-icon me-3" style={{fontSize: '1.5rem'}}>🪔</span>
-                  <div>
-                    <strong>Evening Aarti:</strong> 8:00 PM - 9:00 PM<br/>
-                    <small className="text-muted">Sandhya Aarti and closing prayers</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 order-lg-1">
-            <img src="https://via.placeholder.com/500x400?text=Temple+Worship" alt="Temple Worship" className="img-fluid rounded shadow" />
           </div>
         </div>
         
         <div className="row mb-5">
           <div className="col-12">
-            <div className="custom-card p-5 text-center" style={{background: 'linear-gradient(135deg, var(--cream), #fff)'}}>
-              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>Temple Facilities</h2>
-              <p className="lead mb-4">
-                Our temple provides various facilities to ensure a comfortable and spiritual experience for all devotees.
+            <div className="custom-card p-4">
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>गाँव का परिचय</h2>
+              <p className="lead">कैलाशपुर गाँव दिल्ली से 86 किलोमीटर और रेवाड़ी से 22 किलोमीटर दूर स्थित है।</p>
+              <p>करीब 200 साल पहले तीन परिवार कोसली गाँव से यहाँ आकर बसे, जो सभी कोसलिया गोत्र के थे। आज कैलाशपुर में लगभग 101 परिवार रहते हैं और जनसंख्या 500 से अधिक हो चुकी है।</p>
+              <p>इस छोटे से गाँव की पहचान मुख्य रूप से सेना में सेवा देने के लिए रही है। लगभग हर घर से कोई न कोई सदस्य भारतीय सेना, अर्धसैनिक बलों या पुलिस बल में जरूर रहा है।</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="custom-card p-4">
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>गौरवशाली सैन्य इतिहास</h2>
+              <p className="lead">कैलाशपुर गाँव ने भारतीय सेना और सुरक्षा बलों में महत्वपूर्ण योगदान दिया है।</p>
+              <p>1965 और 1971 के भारत-पाक युद्धों में गाँव के 22 में से 21 सैनिकों ने भाग लिया। यह गाँव भारत के उन चुनिंदा गाँवों में से है, जिसने हर पीढ़ी में देश की रक्षा के लिए जवान दिए हैं।</p>
+              <p>गाँव के लोगों में देशभक्ति, अनुशासन और कर्तव्यनिष्ठा कूट-कूट कर भरी हुई है। गाँव के युवा आज भी सेना, अर्धसैनिक बलों और पुलिस में भर्ती होकर भारत की सेवा कर रहे हैं।</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="custom-card p-5">
+              <h2 className="mb-4 text-center" style={{color: 'var(--secondary)'}}>शिक्षा और उपलब्धियाँ</h2>
+              <p className="lead text-center mb-4">
+                गाँव न केवल सैन्य सेवा में अग्रणी रहा है, बल्कि शिक्षा के क्षेत्र में भी लगातार प्रगति कर रहा है।
               </p>
+              <p className="text-center">यहाँ के कई युवा अधिकारी, इंजीनियर, डॉक्टर, प्रोफेसर बन चुके हैं। गाँव ने अब तक चार सेना अधिकारी, 100 से अधिक स्नातक और अनेक सरकारी कर्मचारी दिए हैं।</p>
+              <p className="text-center">इस प्रगति को और तेज़ करने के लिए हमें अपने गाँव में और अच्छे स्कूल, डिजिटल शिक्षा और पुस्तकालय की आवश्यकता है।</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="custom-card p-4">
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>गाँव के जीवन के लाभ</h2>
+              <p className="lead mb-4">गाँव का जीवन कई मायनों में शहरों से बेहतर है। गाँव से प्रमुख बातें इस प्रकार हैं:</p>
+              
               <div className="row">
-                <div className="col-md-3 mb-3">
-                  <div className="facility-item">
-                    <div style={{fontSize: '2rem', marginBottom: '10px'}}>🏛️</div>
-                    <strong>Main Sanctum</strong>
-                    <p className="small text-muted">Sacred shrine area</p>
+                <div className="col-md-6 mb-4">
+                  <div className="benefit-item p-3 border-start border-4" style={{borderColor: 'var(--primary) !important'}}>
+                    <h5 style={{color: 'var(--secondary)'}}>सामुदायिक सहयोग और सामाजिक संबंध</h5>
+                    <p>गाँव में सभी लोग एक-दूसरे की मदद करते हैं और मिलकर काम करते हैं। शादी, खेती, त्यौहार और संकट के समय संपूर्ण गाँव एक परिवार की तरह खड़ा रहता है।</p>
                   </div>
                 </div>
-                <div className="col-md-3 mb-3">
-                  <div className="facility-item">
-                    <div style={{fontSize: '2rem', marginBottom: '10px'}}>🙏</div>
-                    <strong>Prayer Hall</strong>
-                    <p className="small text-muted">Community worship space</p>
+                <div className="col-md-6 mb-4">
+                  <div className="benefit-item p-3 border-start border-4" style={{borderColor: 'var(--primary) !important'}}>
+                    <h5 style={{color: 'var(--secondary)'}}>आत्मनिर्भरता और संसाधनों का सदुपयोग</h5>
+                    <p>गाँव में सीमित संसाधन होने के बावजूद सभी लोगों ने आत्मनिर्भर रहना सीखा। खेती, पशुपालन, घरेलू निर्माण और परंपरागत हुनर निवासियों को जीवन में स्वावलंबी बनाते हैं।</p>
                   </div>
                 </div>
-                <div className="col-md-3 mb-3">
-                  <div className="facility-item">
-                    <div style={{fontSize: '2rem', marginBottom: '10px'}}>💧</div>
-                    <strong>Ablution Area</strong>
-                    <p className="small text-muted">Purification facilities</p>
+                <div className="col-md-6 mb-4">
+                  <div className="benefit-item p-3 border-start border-4" style={{borderColor: 'var(--primary) !important'}}>
+                    <h5 style={{color: 'var(--secondary)'}}>प्रकृति से जुड़ाव और पर्यावरण का महत्व</h5>
+                    <p>गाँव की खुली हवा, हरे-भरे खेत, तालाब और पेड़-पौधे निवासियों को पर्यावरण के प्रति संवेदनशील बनाते हैं। प्रकृति से यह सीधा संबंध शारीरिक और मानसिक स्वास्थ्य के लिए बहुत लाभदायक होता है।</p>
                   </div>
                 </div>
-                <div className="col-md-3 mb-3">
-                  <div className="facility-item">
-                    <div style={{fontSize: '2rem', marginBottom: '10px'}}>🚗</div>
-                    <strong>Parking</strong>
-                    <p className="small text-muted">Vehicle parking space</p>
+                <div className="col-md-6 mb-4">
+                  <div className="benefit-item p-3 border-start border-4" style={{borderColor: 'var(--primary) !important'}}>
+                    <h5 style={{color: 'var(--secondary)'}}>परंपराएं और संस्कार</h5>
+                    <p>गाँव में संस्कृति और परंपराएं पीढ़ी दर पीढ़ी चलती आ रही हैं। बड़ों का सम्मान, एकता, परिश्रम और ईमानदारी यहाँ के संस्कारों में शामिल हैं।</p>
                   </div>
                 </div>
               </div>
@@ -112,25 +87,11 @@ const Temple = () => {
         </div>
         
         <div className="row">
-          <div className="col-md-4 mb-4">
-            <div className="custom-card text-center p-4">
-              <div className="service-icon mb-3" style={{fontSize: '3rem'}}>🕉️</div>
-              <h3 style={{color: 'var(--secondary)'}}>Daily Prayers</h3>
-              <p>Regular morning and evening prayers conducted by experienced priests following traditional rituals.</p>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="custom-card text-center p-4">
-              <div className="service-icon mb-3" style={{fontSize: '3rem'}}>🎭</div>
-              <h3 style={{color: 'var(--secondary)'}}>Special Ceremonies</h3>
-              <p>Weddings, naming ceremonies, and other religious functions conducted with proper Vedic traditions.</p>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4">
-            <div className="custom-card text-center p-4">
-              <div className="service-icon mb-3" style={{fontSize: '3rem'}}>📚</div>
-              <h3 style={{color: 'var(--secondary)'}}>Religious Education</h3>
-              <p>Classes on Hindu scriptures, Sanskrit, and spiritual teachings for devotees of all ages.</p>
+          <div className="col-12">
+            <div className="custom-card p-4 text-center" style={{background: 'linear-gradient(135deg, var(--cream), #fff)'}}>
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>चुनौतियाँ और संघर्ष से लड़ने की क्षमता</h2>
+              <p className="lead">गाँव में कई सुविधाओं की कमी होती है, लेकिन इससे गांववासियों को संघर्ष करने और मुश्किलों से लड़ने की ताकत मिलती है।</p>
+              <p>यही कारण है कि गाँवों से निकले लोग सेना, प्रशासन, खेल और विज्ञान जैसे क्षेत्रों में आगे बढ़ते हैं।</p>
             </div>
           </div>
         </div>
