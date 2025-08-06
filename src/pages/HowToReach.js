@@ -6,157 +6,211 @@ const HowToReach = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="section-title">How to Reach</h1>
+            <h1 className="section-title">कैलाशपुर ग्राम दर्शन: एक यात्रा मार्गदर्शिका</h1>
             <div className="text-center mb-5">
               <p className="lead" style={{fontSize: '1.2rem', color: 'var(--primary)'}}>
-                Find Your Way to Kailashpur Temple
+                स्थान: ग्राम कैलाशपुर, पोस्ट ऑफिस जाटूसाना, जिला रेवाड़ी, हरियाणा
               </p>
               <p style={{color: '#666'}}>
-                Located in the peaceful village of Kailashpur, our temple is easily accessible 
-                by various modes of transportation.
+                मुख्य आकर्षण: श्री शिव मंदिर, श्री राम चंदर सर्वदेव मंदिर, धार्मिक आयोजन, ग्रामीण संस्कृति
               </p>
             </div>
           </div>
         </div>
         
-        <div className="row align-items-center mb-5">
-          <div className="col-lg-6">
+        <div className="row mb-5">
+          <div className="col-12">
             <div className="custom-card p-4">
-              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>📍 Address</h2>
-              <div className="address-info">
-                <p className="lead mb-3">
-                  <strong>Kailashpur Shiv Ram Sewa Sansthan Trust</strong>
-                </p>
-                <p className="mb-2">Village Kailashpur (Dhani Jatusana)</p>
-                <p className="mb-2">Rewari District, Haryana - 123401</p>
-                <p className="mb-4">India</p>
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>📍 कैसे पहुँचे कैलाशपुर</h2>
+              
+              <div className="row mb-4">
+                <div className="col-md-4 mb-3">
+                  <div className="transport-card p-3" style={{background: 'var(--cream)', borderRadius: '10px'}}>
+                    <h4 style={{color: 'var(--primary)'}}><span style={{fontSize: '1.5rem'}}>🚗</span> सड़क मार्ग:</h4>
+                    <ul className="list-unstyled mb-0">
+                      <li>• दिल्ली से दूरी: 86 किमी</li>
+                      <li>• गुरुग्राम से दूरी: 70 किमी</li>
+                      <li>• रेवाड़ी से दूरी: 22 किमी</li>
+                      <li>• जयपुर से दूरी: 180 किमी</li>
+                    </ul>
+                    <p className="mt-2 mb-0 small text-muted">
+                      मुख्य संपर्क मार्ग: रोहड़ाई–जाटूसाना स्टेट हाईवे से लगभग 2 किमी दूर (पक्की सड़क द्वारा जुड़ा हुआ)
+                    </p>
+                  </div>
+                </div>
                 
-                <div className="contact-details">
-                  <p className="mb-2">
-                    <strong>📞 Phone:</strong> 
-                    <a href="tel:7290078318" style={{color: 'var(--primary)', marginLeft: '10px'}}>+91 7290078318</a>
-                  </p>
-                  <p className="mb-2">
-                    <strong>✉️ Email:</strong> 
-                    <a href="mailto:kpsrtrust@gmail.com" style={{color: 'var(--primary)', marginLeft: '10px'}}>kpsrtrust@gmail.com</a>
+                <div className="col-md-4 mb-3">
+                  <div className="transport-card p-3" style={{background: 'var(--cream)', borderRadius: '10px'}}>
+                    <h4 style={{color: 'var(--primary)'}}><span style={{fontSize: '1.5rem'}}>🚆</span> रेल मार्ग:</h4>
+                    <p><strong>निकटतम स्टेशन:</strong> जाटूसाना रेलवे स्टेशन (2.5 किमी दूर)</p>
+                    <p><strong>ट्रेनें उपलब्ध:</strong></p>
+                    <ul className="list-unstyled mb-0">
+                      <li>• हिसार, रेवाड़ी, दिल्ली, रोहतक</li>
+                      <li>• जयपुर, रिंगस, जोधपुर</li>
+                    </ul>
+                    <p className="mt-2 mb-0 small text-muted">
+                      रेलवे स्टेशन से गांव तक ब्लैक टॉप सड़क द्वारा सीधी पहुँच।
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="col-md-4 mb-3">
+                  <div className="transport-card p-3" style={{background: 'var(--cream)', borderRadius: '10px'}}>
+                    <h4 style={{color: 'var(--primary)'}}><span style={{fontSize: '1.5rem'}}>🚌</span> बस सेवा / निजी वाहन:</h4>
+                    <ul className="list-unstyled mb-0">
+                      <li>• नियमित हरियाणा रोडवेज और प्राइवेट बसें</li>
+                      <li>• टैक्सी और निजी वाहन से आसान पहुँच</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="custom-card p-4">
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>🛕 मुख्य दर्शनीय स्थल</h2>
+              <div className="row">
+                <div className="col-md-6 mb-3">
+                  <div className="p-3" style={{background: '#f8f9fa', borderRadius: '8px'}}>
+                    <h4 style={{color: 'var(--primary)'}}><strong>1. प्राचीन शिव मंदिर</strong></h4>
+                    <ul className="list-unstyled mb-0">
+                      <li>• रेलवे लाइन से मात्र 50 मीटर दूर</li>
+                      <li>• ऐतिहासिक और आध्यात्मिक महत्व</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-md-6 mb-3">
+                  <div className="p-3" style={{background: '#f8f9fa', borderRadius: '8px'}}>
+                    <h4 style={{color: 'var(--primary)'}}><strong>2. श्री रामचंद्र सर्वदेव मंदिर</strong></h4>
+                    <ul className="list-unstyled mb-0">
+                      <li>• हाल ही में निर्मित भव्य मंदिर</li>
+                      <li>• सभी प्रमुख देवताओं की मूर्तियाँ</li>
+                      <li>• भव्य प्राण प्रतिष्ठा महोत्सव, कलश यात्रा, रासलीला का आयोजन</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="custom-card p-4">
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>🌾 आसपास के गाँवों से संपर्क</h2>
+              <p className="mb-3">कैलाशपुर इन गाँवों से पक्की सड़कों द्वारा जुड़ा हुआ है:</p>
+              <div className="row">
+                <div className="col-md-6">
+                  <ul className="list-unstyled">
+                    <li>• मूसेपुर</li>
+                    <li>• हलुहेड़ा</li>
+                    <li>• धोखिया</li>
+                    <li>• नैन्सुखपुरा</li>
+                  </ul>
+                </div>
+                <div className="col-md-6">
+                  <ul className="list-unstyled">
+                    <li>• लाला</li>
+                    <li>• पर्खोतमपुर</li>
+                    <li>• जाटूसाना</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="text-muted small mt-3">
+                धार्मिक आयोजनों व मेलों में इन गाँवों से हजारों श्रद्धालु पहुँचते हैं।
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="custom-card p-4" style={{background: 'linear-gradient(135deg, var(--cream), #fff)'}}>
+              <h2 className="mb-4" style={{color: 'var(--secondary)'}}>🙏 धार्मिक उत्सव और कार्यक्रम</h2>
+              <div className="row">
+                <div className="col-md-6 mb-3">
+                  <ul className="list-unstyled">
+                    <li>• महा शिवरात्रि पर विशेष आयोजन</li>
+                    <li>• प्राण प्रतिष्ठा पूजन (फरवरी)</li>
+                    <li>• रासलीला, कलश यात्रा, भंडारा, खेलकूद प्रतियोगिताएं</li>
+                  </ul>
+                </div>
+                <div className="col-md-6 mb-3">
+                  <p className="text-muted">
+                    600+ साड़ियों, 150+ शॉलों, 500+ ट्रैक सूट जैसी विशाल मान-सम्मान की व्यवस्थाएँ
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
-            <img src="https://via.placeholder.com/500x400?text=Temple+Location" alt="Temple Location" className="img-fluid rounded shadow" />
-          </div>
         </div>
         
         <div className="row mb-5">
-          <div className="col-12">
-            <h2 className="text-center mb-4" style={{color: 'var(--secondary)'}}>🗺️ Interactive Map</h2>
-            <div className="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.123456789!2d76.123456!3d28.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKailashpur%2C%20Rewari%2C%20Haryana!5e0!3m2!1sen!2sin!4v1234567890"
-                width="100%"
-                height="450"
-                style={{border: 0}}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Kailashpur Location"
-              ></iframe>
+          <div className="col-md-6 mb-4">
+            <div className="custom-card p-4">
+              <h3 className="mb-3" style={{color: 'var(--secondary)'}}>🍛 भोजन और आवास</h3>
+              <ul className="list-unstyled">
+                <li className="mb-2">• <strong>भंडारे में प्रसाद:</strong> देसी घी का भोजन, हलवाइयों द्वारा तैयार</li>
+                <li className="mb-2">• <strong>विश्राम व्यवस्था:</strong> स्थानीय धर्मशाला/गांववासियों द्वारा आतिथ्य</li>
+                <li className="mb-2">• शीतल जल व पेयजल की व्यवस्था</li>
+              </ul>
             </div>
           </div>
-        </div>
-        
-        <div className="row mb-5">
-          <div className="col-md-4 mb-4">
-            <div className="custom-card text-center p-4">
-              <div className="transport-icon mb-3" style={{fontSize: '3rem'}}>🚗</div>
-              <h3 style={{color: 'var(--secondary)'}}>By Car</h3>
-              <p><strong>From Delhi:</strong> 80 km via NH-48</p>
-              <p><strong>From Gurgaon:</strong> 45 km via Rewari Road</p>
-              <p><strong>From Rewari:</strong> 15 km via village roads</p>
-              <p className="text-muted small">Parking available at temple premises</p>
-            </div>
-          </div>
-          
-          <div className="col-md-4 mb-4">
-            <div className="custom-card text-center p-4">
-              <div className="transport-icon mb-3" style={{fontSize: '3rem'}}>🚌</div>
-              <h3 style={{color: 'var(--secondary)'}}>By Bus</h3>
-              <p><strong>From Delhi:</strong> Take bus to Rewari, then local transport</p>
-              <p><strong>From Rewari:</strong> Local buses available to Kailashpur</p>
-              <p><strong>Frequency:</strong> Every 30 minutes during day time</p>
-              <p className="text-muted small">Bus stop 500m from temple</p>
-            </div>
-          </div>
-          
-          <div className="col-md-4 mb-4">
-            <div className="custom-card text-center p-4">
-              <div className="transport-icon mb-3" style={{fontSize: '3rem'}}>🚂</div>
-              <h3 style={{color: 'var(--secondary)'}}>By Train</h3>
-              <p><strong>Nearest Station:</strong> Rewari Junction</p>
-              <p><strong>Distance:</strong> 15 km from temple</p>
-              <p><strong>Connectivity:</strong> Well connected to Delhi, Jaipur</p>
-              <p className="text-muted small">Taxi/auto available from station</p>
+          <div className="col-md-6 mb-4">
+            <div className="custom-card p-4">
+              <h3 className="mb-3" style={{color: 'var(--secondary)'}}>🎯 विशेषताएं</h3>
+              <ul className="list-unstyled">
+                <li className="mb-2">• शांतिपूर्ण ग्रामीण वातावरण</li>
+                <li className="mb-2">• धार्मिक आस्था और ग्राम विकास का संगम</li>
+                <li className="mb-2">• प्रमुख शहरों से नजदीकी और सुगम पहुँच</li>
+                <li className="mb-2">• रेलवे लाइन का सौंदर्य और भव्यता मंदिर के पास</li>
+              </ul>
             </div>
           </div>
         </div>
         
         <div className="row mb-5">
-          <div className="col-12">
-            <div className="custom-card p-5" style={{background: 'linear-gradient(135deg, var(--cream), #fff)'}}>
-              <h2 className="text-center mb-4" style={{color: 'var(--secondary)'}}>🧭 Detailed Directions</h2>
-              <div className="row">
-                <div className="col-md-6 mb-4">
-                  <h4 style={{color: 'var(--primary)'}}>From Delhi (80 km)</h4>
-                  <ol className="directions-list">
-                    <li>Take NH-48 towards Jaipur</li>
-                    <li>Exit at Rewari and head towards city center</li>
-                    <li>Follow signs to Kailashpur village</li>
-                    <li>Temple is located in Dhani Jatusana area</li>
-                  </ol>
-                  <p className="text-muted small">
-                    <strong>Travel Time:</strong> Approximately 1.5-2 hours
-                  </p>
-                </div>
-                <div className="col-md-6 mb-4">
-                  <h4 style={{color: 'var(--primary)'}}>From Gurgaon (45 km)</h4>
-                  <ol className="directions-list">
-                    <li>Take Gurgaon-Rewari Road</li>
-                    <li>Continue straight towards Rewari</li>
-                    <li>Turn right towards Kailashpur village</li>
-                    <li>Follow local signs to reach temple</li>
-                  </ol>
-                  <p className="text-muted small">
-                    <strong>Travel Time:</strong> Approximately 1-1.5 hours
-                  </p>
-                </div>
+          <div className="col-md-6 mb-4">
+            <div className="custom-card p-4">
+              <h3 className="mb-3" style={{color: 'var(--secondary)'}}>🛍️ क्या लेकर जाएं</h3>
+              <ul className="list-unstyled">
+                <li className="mb-2">• पूजा सामग्री, कैमरा, श्रद्धा और समय 😊</li>
+                <li className="mb-2">• ग्रामीण पर्यटन के लिए उत्सुक मन</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-md-6 mb-4">
+            <div className="custom-card p-4">
+              <h3 className="mb-3" style={{color: 'var(--secondary)'}}>📞 संपर्क करें (Travel Coordination)</h3>
+              <div className="contact-details">
+                <p className="mb-2"><strong>कैलाशपुर शिव राम सेवा संस्थान</strong></p>
+                <p className="mb-2">स्थान: शिव मंदिर परिसर, कैलाशपुर</p>
+                <p className="mb-2">
+                  <strong>ईमेल:</strong> 
+                  <a href="mailto:kpsrtrust@gmail.com" style={{color: 'var(--primary)', marginLeft: '5px'}}>kpsrtrust@gmail.com</a>
+                </p>
+                <p className="mb-2">
+                  <strong>फ़ोन:</strong> 
+                  <a href="tel:7290078318" style={{color: 'var(--primary)', marginLeft: '5px'}}>+91-7290078318</a>
+                  <span className="text-muted small"> (स्थानीय समन्वयक)</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
         
         <div className="row">
-          <div className="col-md-6 mb-4">
-            <div className="custom-card p-4">
-              <h3 className="mb-3" style={{color: 'var(--secondary)'}}>🏨 Nearby Accommodations</h3>
-              <ul className="list-unstyled">
-                <li className="mb-2">• Hotel Rewari Palace - 12 km</li>
-                <li className="mb-2">• Dharamshala facilities at temple</li>
-                <li className="mb-2">• Guest house bookings available</li>
-                <li className="mb-2">• Local homestay options</li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-6 mb-4">
-            <div className="custom-card p-4">
-              <h3 className="mb-3" style={{color: 'var(--secondary)'}}>🍽️ Nearby Facilities</h3>
-              <ul className="list-unstyled">
-                <li className="mb-2">• Temple prasadam available</li>
-                <li className="mb-2">• Local restaurants in Rewari</li>
-                <li className="mb-2">• Medical facilities nearby</li>
-                <li className="mb-2">• Fuel stations on main road</li>
-              </ul>
+          <div className="col-12">
+            <div className="custom-card p-5 text-center" style={{background: 'linear-gradient(135deg, var(--primary), var(--secondary))', color: 'white'}}>
+              <h2 className="mb-3">🙏 स्वागत संदेश</h2>
+              <p className="lead mb-0">
+                कैलाशपुर कोई साधारण गांव नहीं, यह संस्कृति, आस्था और विकास का जीवंत उदाहरण है। 
+                चाहे आप धार्मिक यात्रा पर हों, या भारत के ग्राम्य जीवन का अनुभव लेना चाहते हों — 
+                <strong>कैलाशपुर आपका स्वागत करता है।</strong>
+              </p>
             </div>
           </div>
         </div>
