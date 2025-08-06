@@ -96,9 +96,11 @@ const Home = () => {
                     <img 
                       src={member.image} 
                       alt={member.name} 
-                      className="card-img-top" 
+                      className="card-img-top compressed-image" 
                       style={{height: '320px', objectFit: 'cover'}} 
                       draggable={false}
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="card-body text-center">
                       <h5 className="card-title">{member.name}</h5>
@@ -143,7 +145,14 @@ const Home = () => {
                   transition: { duration: 0.3 }
                 }}
               >
-                <img src={image} alt={`Gallery ${index + 1}`} />
+                <img 
+                  src={image} 
+                  alt={`Gallery ${index + 1}`} 
+                  className="compressed-image"
+                  loading={index < 3 ? "eager" : "lazy"}
+                  decoding="async"
+                  style={{width: '100%', height: 'auto', objectFit: 'cover'}}
+                />
               </motion.div>
             ))}
           </div>

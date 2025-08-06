@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Masonry from 'react-masonry-css';
-import { createPlaceholder } from '../utils/imageOptimizer';
+import { createPlaceholder, OptimizedImage } from '../utils/imageOptimizer';
 
 // Import all Pran Pratistha images
 import img1 from '../assets/images/Pran Pratishtha/113A1963.JPG';
@@ -95,19 +95,21 @@ const GalleryPranPratistha = () => {
               <LazyLoadImage
                 src={image}
                 alt={`Pran Pratistha ${index + 1}`}
-                className="img-fluid gallery-lazy-image"
+                className="img-fluid gallery-lazy-image compressed-image"
                 onClick={() => setSelectedImage({src: image, title: `Pran Pratistha - Photo ${index + 1}`})}
                 effect="blur"
-                threshold={100}
-                loading="lazy"
+                threshold={200}
+                loading={index < 6 ? "eager" : "lazy"}
                 decoding="async"
-                placeholderSrc={createPlaceholder()}
-                visibleByDefault={index < 11} // Load first 11 images immediately
+                placeholderSrc={createPlaceholder(320, 240)}
+                visibleByDefault={index < 6}
                 style={{
                   cursor: 'pointer',
                   width: '100%',
                   height: 'auto',
-                  display: 'block'
+                  display: 'block',
+                  maxWidth: '100%',
+                  objectFit: 'cover'
                 }}
               />
             </div>
