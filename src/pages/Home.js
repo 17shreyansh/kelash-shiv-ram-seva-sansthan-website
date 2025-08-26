@@ -20,12 +20,11 @@ import pran3 from '../assets/images/Pran Pratishtha/113A2320.JPG';
 
 const Home = () => {
   const trustMembers = [
-    { name: "Shri Ram Sharma", position: "President", image: profileImg },
-    { name: "Shri Shiv Kumar", position: "Secretary", image: profileImg },
-    { name: "Smt. Sita Devi", position: "Treasurer", image: profileImg },
-    { name: "Shri Hanuman Das", position: "Vice President", image: profileImg },
-    { name: "Shri Krishna Gopal", position: "Joint Secretary", image: profileImg },
-    { name: "Smt. Radha Sharma", position: "Member", image: profileImg }
+    { name: "कैप्टन राम किशन यादव", position: "अध्यक्ष", image: profileImg },
+    { name: "तपेश्वर यादव", position: "सलाहकार - वित्तीय", image: profileImg },
+    { name: "राजपाल यादव", position: "सलाहकार - इमारत रख-रखाव", image: profileImg },
+    { name: "अमित यादव", position: "सलाहकार - प्रचार", image: profileImg },
+    { name: "रवि यादव (पंच)", position: "सलाहकार - त्योहार एवं सामाजिक व्यवस्था", image: profileImg }
   ];
 
   const galleryImages = [kalash1, kalash2, pran1, kalash3, pran2, pran3];
@@ -34,29 +33,21 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="hero-section">
-        <motion.div 
-          className="hero-content"
-          initial={{ opacity: 0, y: 50, scale: 0.95 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          <motion.h1 
-            className="hindi-heading"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            whileHover={{ y: -5, transition: { duration: 0.3 } }}
-          >
-            कैलाशपुर शिव राम सेवा संस्थान ट्रस्ट
-          </motion.h1>
-          <motion.p 
-            className="verse hindi-heading"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-अर्थ: धर्म से ही धन, सुख तथा सब कुछ प्राप्त होता है । इस संसार में धर्म ही सार वस्तु है ।          </motion.p>
-        </motion.div>
+        <div className="hero-content">
+          <h1 className="hindi-heading">
+            <span className="hero-main">कैलाशपुर</span>
+            <span className="hero-sub">शिव राम सेवा संस्थान</span>
+          </h1>
+          <div className="verse hindi-heading">
+            <p className="mantra">
+              धर्म-धर्मादर्थः प्रभवति धर्मात्प्रभवते सुखम् ।<br/>
+              धर्मण लभते सर्वं धर्मप्रसारमिदं जगत् ॥
+            </p>
+            <p className="arth">
+              <strong>अर्थ:</strong> धर्म से ही धन, सुख तथा सब कुछ प्राप्त होता है । इस संसार में धर्म ही सार वस्तु है ।
+            </p>
+          </div>
+        </div>
       </section>
 
   

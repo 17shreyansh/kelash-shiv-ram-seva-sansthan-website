@@ -38,15 +38,16 @@ body {
 
 /* Navigation */
 .navbar {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-  padding: 1rem 0;
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+  padding: 0.8rem 0;
+  transition: all 0.4s ease;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255,215,0,0.1);
 }
 
 .navbar-toggler {
@@ -80,56 +81,70 @@ body {
 
 .navbar-brand {
   font-family: 'Noto Serif Devanagari', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
   color: var(--secondary) !important;
-  text-shadow: none;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.navbar.transparent .navbar-brand {
-  color: white !important;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-main {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--secondary);
+  font-family: 'Noto Serif Devanagari', serif;
+}
+
+.brand-sub {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-top: -2px;
+  font-family: 'Noto Serif Devanagari', serif;
+}
+
+.navbar.transparent .brand-main {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.navbar.transparent .brand-sub {
+  color: var(--accent);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .navbar-nav .nav-link {
   color: var(--dark) !important;
   font-weight: 600;
-  margin: 0 10px;
-  padding: 10px 20px !important;
-  border-radius: 30px;
+  margin: 0 8px;
+  padding: 12px 18px !important;
+  border-radius: 25px;
   transition: all 0.3s ease;
-  text-shadow: none;
+  font-size: 0.95rem;
+  font-family: 'Hind', sans-serif;
   position: relative;
-  overflow: hidden;
 }
 
 .navbar.transparent .nav-link {
-  color: white !important;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-
-.navbar-nav .nav-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--gradient);
-  transition: left 0.3s ease;
-  z-index: -1;
-  border-radius: 30px;
-}
-
-.navbar-nav .nav-link:hover::before {
-  left: 0;
+  color: rgba(255,255,255,0.95) !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .navbar-nav .nav-link:hover {
   color: white !important;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255,107,53,0.3);
+  background: var(--gradient);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255,107,53,0.3);
+}
+
+.navbar.transparent .nav-link:hover {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  color: white !important;
 }
 
 .dropdown {
@@ -286,9 +301,22 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .navbar-brand {
-    font-size: 1.1rem !important;
-    line-height: 1.2;
+  .brand-main {
+    font-size: 1.2rem;
+  }
+  
+  .brand-sub {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-main {
+    font-size: 1rem;
+  }
+  
+  .brand-sub {
+    font-size: 0.7rem;
   }
 }
 
@@ -318,17 +346,19 @@ body {
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('./assets/images/temple.jpg');
+  background: 
+    linear-gradient(135deg, rgba(255,215,0,0.08), rgba(255,107,53,0.05)),
+    linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25)),
+    url('./assets/images/temple.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   position: relative;
-  overflow: hidden;
-  padding-bottom: 100px;
-  margin-top: 0;
+  padding: 80px 20px 20px;
 }
 
 .hero-section::before {
@@ -338,69 +368,83 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.1) 70%);
-  z-index: 1;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.05) 100%);
 }
 
 .hero-content {
+  max-width: min(61.8vw, 900px);
+  width: 100%;
+  padding: 2rem 1.5rem;
   position: relative;
   z-index: 2;
-  max-width: 1000px;
-  text-align: center;
-  padding: 50px 30px;
 }
 
 .hero-content h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.618rem;
+  line-height: 1.618;
+}
+
+.hero-main {
   font-family: 'Noto Serif Devanagari', serif;
-  font-size: 4rem;
-  margin-bottom: 25px;
-  color: #ffffff;
+  font-size: 4.5rem;
   font-weight: 800;
-  line-height: 1.1;
+  color: #ffffff;
   text-shadow: 
-    4px 4px 12px rgba(0, 0, 0, 0.9),
-    2px 2px 6px rgba(0, 0, 0, 0.8),
-    0 0 20px rgba(255, 215, 0, 0.3);
-  letter-spacing: 2px;
-  transform: translateY(0);
-  transition: all 0.3s ease;
+    4px 4px 12px rgba(0,0,0,0.8),
+    2px 2px 6px rgba(0,0,0,0.6),
+    0 0 30px rgba(255,215,0,0.6),
+    0 0 60px rgba(255,215,0,0.3);
+  letter-spacing: 0.236rem;
+  margin-bottom: 1.618rem;
 }
 
-.hero-content h1:hover {
-  transform: translateY(-5px);
+.hero-sub {
+  font-family: 'Hind', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #FFD700;
   text-shadow: 
-    6px 6px 16px rgba(0, 0, 0, 0.9),
-    3px 3px 8px rgba(0, 0, 0, 0.8),
-    0 0 30px rgba(255, 215, 0, 0.5);
-}
-
-.hero-content .slogan {
-  font-family: 'Noto Serif Devanagari', serif;
-  font-size: 2.8rem;
-  margin-bottom: 25px;
-  color: var(--accent);
-  font-weight: 700;
-  text-shadow: 
-    3px 3px 10px rgba(0, 0, 0, 0.9),
-    1px 1px 5px rgba(0, 0, 0, 0.8),
-    0 0 15px rgba(255, 215, 0, 0.4);
-  letter-spacing: 3px;
+    3px 3px 8px rgba(0,0,0,0.7),
+    1px 1px 4px rgba(0,0,0,0.5),
+    0 0 20px rgba(255,215,0,0.5);
+  letter-spacing: 0.146rem;
 }
 
 .hero-content .verse {
-  font-family: 'Noto Serif Devanagari', serif;
-  font-size: 1.6rem;
-  color: #f8f9fa;
-  font-weight: 600;
-  margin-bottom: 40px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid rgba(255,215,0,0.4);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 32px rgba(255,215,0,0.1);
+}
+
+.hero-content .mantra {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1.618rem;
+  line-height: 1.618;
   text-shadow: 
-    3px 3px 8px rgba(0, 0, 0, 0.9),
-    1px 1px 4px rgba(0, 0, 0, 0.8);
-  line-height: 1.7;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
+    1px 1px 3px rgba(0,0,0,0.4),
+    0 0 15px rgba(255,215,0,0.3);
+}
+
+.hero-content .arth {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 1.236rem;
+  padding: 1.236rem;
+  background: rgba(255,215,0,0.2);
+  border-radius: 0.618rem;
+  border-left: 4px solid #FFD700;
+}
+
+.hero-content .arth strong {
+  color: var(--accent);
 }
 
 .hero-buttons {
@@ -1114,31 +1158,46 @@ img {
   }
 }
 
-/* Responsive Design */
+
+
 @media (max-width: 768px) {
   .hero-section {
-    height: 95vh;
-    padding: 15px;
+    padding: 60px 15px 15px;
   }
   
   .hero-content {
-    max-width: 95%;
-    padding: 40px 25px;
+    padding: 1.5rem 1rem;
+    max-width: 95vw;
   }
   
-  .hero-content h1 {
-    font-size: 2.8rem;
+  .hero-main {
+    font-size: 3.2rem;
     letter-spacing: 1px;
+    text-shadow: 
+      3px 3px 8px rgba(0,0,0,0.8),
+      1px 1px 4px rgba(0,0,0,0.6),
+      0 0 20px rgba(255,215,0,0.5);
   }
   
-  .hero-content .slogan {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
+  .hero-sub {
+    font-size: 1.8rem;
+    text-shadow: 
+      2px 2px 6px rgba(0,0,0,0.7),
+      1px 1px 3px rgba(0,0,0,0.5),
+      0 0 15px rgba(255,215,0,0.4);
   }
   
   .hero-content .verse {
-    font-size: 1.3rem;
-    padding: 0 10px;
+    padding: 1.5rem;
+  }
+  
+  .hero-content .mantra {
+    font-size: 1.5rem;
+  }
+  
+  .hero-content .arth {
+    font-size: 1.1rem;
+    padding: 15px;
   }
   
   .hero-buttons {
@@ -1155,10 +1214,6 @@ img {
   
   .section-title {
     font-size: 2.2rem;
-  }
-  
-  .navbar-brand {
-    font-size: 1.3rem;
   }
   
   .section {
@@ -1198,27 +1253,46 @@ img {
 
 @media (max-width: 576px) {
   .hero-section {
-    height: 90vh;
-    padding: 10px;
+    height: 100vh;
+    padding: 80px 10px 10px;
+    background-attachment: scroll;
   }
   
   .hero-content {
-    padding: 30px 15px;
+    padding: 1.5rem 1rem;
+    max-width: 98vw;
   }
   
-  .hero-content h1 {
-    font-size: 2.2rem;
+  .hero-main {
+    font-size: 2.5rem;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-shadow: 
+      2px 2px 6px rgba(0,0,0,0.8),
+      1px 1px 3px rgba(0,0,0,0.6),
+      0 0 15px rgba(255,215,0,0.4);
   }
   
-  .hero-content .slogan {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
+  .hero-sub {
+    font-size: 1.4rem;
+    text-shadow: 
+      2px 2px 4px rgba(0,0,0,0.7),
+      0 0 10px rgba(255,215,0,0.4);
   }
   
   .hero-content .verse {
+    padding: 1.2rem;
+  }
+  
+  .hero-content .mantra {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+  
+  .hero-content .arth {
     font-size: 1.1rem;
-    padding: 0 5px;
+    padding: 12px;
+    margin-top: 15px;
   }
   
   .btn-hero-primary,

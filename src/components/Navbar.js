@@ -42,7 +42,10 @@ const Navbar = () => {
     <nav className={getNavbarClass()}>
       <div className="container">
         <Link className="navbar-brand" to="/">
-          Kailashpur Shiv Ram Sewa Sansthan
+          <span className="brand-text">
+            <span className="brand-main">कैलाशपुर</span>
+            <span className="brand-sub">शिव राम सेवा संस्थान</span>
+          </span>
         </Link>
 
         <button
@@ -65,7 +68,7 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="/about-trust">About Trust</Link></li>
-                <li><Link className="dropdown-item" to="/temple">Temple</Link></li>
+                <li><Link className="dropdown-item" to="/about-temple">About Temple</Link></li>
                 <li><Link className="dropdown-item" to="/trust-members">Trust Members</Link></li>
               </ul>
             </li>
@@ -74,6 +77,7 @@ const Navbar = () => {
                 Kailashpur
               </a>
               <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/about-kailashpur">About Kailashpur</Link></li>
                 <li><Link className="dropdown-item" to="/how-to-reach">How to Reach</Link></li>
               </ul>
             </li>
@@ -87,6 +91,7 @@ const Navbar = () => {
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="/gallery/kalash-yatra">Kalash Yatra</Link></li>
                 <li><Link className="dropdown-item" to="/gallery/pran-pratistha">Pran Pratistha</Link></li>
+                <li><Link className="dropdown-item" to="/gallery/other">Other</Link></li>
               </ul>
             </li>
             <li className="nav-item">
@@ -114,7 +119,7 @@ const Navbar = () => {
               {activeDropdown === 'about' && (
                 <div className="sidebar-dropdown-content">
                   <Link to="/about-trust" onClick={closeSidebar}>About Trust</Link>
-                  <Link to="/temple" onClick={closeSidebar}>Temple</Link>
+                  <Link to="/about-temple" onClick={closeSidebar}>About Temple</Link>
                   <Link to="/trust-members" onClick={closeSidebar}>Trust Members</Link>
                 </div>
               )}
@@ -129,6 +134,7 @@ const Navbar = () => {
               </button>
               {activeDropdown === 'kailashpur' && (
                 <div className="sidebar-dropdown-content">
+                  <Link to="/about-kailashpur" onClick={closeSidebar}>About Kailashpur</Link>
                   <Link to="/how-to-reach" onClick={closeSidebar}>How to Reach</Link>
                 </div>
               )}
@@ -147,6 +153,7 @@ const Navbar = () => {
                 <div className="sidebar-dropdown-content">
                   <Link to="/gallery/kalash-yatra" onClick={closeSidebar}>Kalash Yatra</Link>
                   <Link to="/gallery/pran-pratistha" onClick={closeSidebar}>Pran Pratistha</Link>
+                  <Link to="/gallery/other" onClick={closeSidebar}>Other</Link>
                 </div>
               )}
             </div>

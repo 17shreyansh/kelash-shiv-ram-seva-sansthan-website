@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaOm, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaMap, FaBuilding, FaPrayingHands } from 'react-icons/fa';
+import temple from '../assets/images/temple.jpg';
 
 const ContactUs = () => {
   return (
@@ -20,24 +22,24 @@ const ContactUs = () => {
           <div className="col-lg-6 mb-4">
             <div className="contact-info-card">
               <h2 className="mb-4" style={{color: 'var(--secondary)', fontWeight: '800'}}>
-                🕉️ Kailashpur Shiv Ram Sewa Sansthan Trust
+                <FaOm style={{marginRight: '10px', color: 'var(--primary)'}} /> Kailashpur Shiv Ram Sewa Sansthan Trust
               </h2>
               
               <div className="contact-info-item">
-                <h5>📍 Our Address</h5>
+                <h5><FaMapMarkerAlt style={{marginRight: '8px', color: 'var(--primary)'}} /> Our Address</h5>
                 <p><strong>Village Kailashpur (Dhani Jatusana)</strong></p>
                 <p>Rewari, Haryana - 123401, India</p>
               </div>
               
               <div className="contact-info-item">
-                <h5>📞 Contact Information</h5>
+                <h5><FaPhone style={{marginRight: '8px', color: 'var(--primary)'}} /> Contact Information</h5>
                 <p><strong>Mobile:</strong> <a href="tel:7290078318">+91 7290078318</a></p>
                 <p><strong>Email:</strong> <a href="mailto:kpsrtrust@gmail.com">kpsrtrust@gmail.com</a></p>
                 <p><strong>Website:</strong> <a href="http://shivramtrust.com" target="_blank" rel="noopener noreferrer">shivramtrust.com</a></p>
               </div>
               
               <div className="contact-info-item">
-                <h5>🕐 Temple Timings</h5>
+                <h5><FaClock style={{marginRight: '8px', color: 'var(--primary)'}} /> Temple Timings</h5>
                 <p><strong>Morning Darshan:</strong> 6:00 AM - 12:00 PM</p>
                 <p><strong>Evening Darshan:</strong> 4:00 PM - 9:00 PM</p>
                 <p style={{fontSize: '0.9rem', color: '#888', marginTop: '10px'}}>
@@ -49,7 +51,7 @@ const ContactUs = () => {
           
           <div className="col-lg-6 mb-4">
             <img 
-              src="https://via.placeholder.com/600x500?text=Temple+Contact+Image" 
+              src={temple} 
               alt="Temple Contact" 
               className="img-fluid contact-hero-image w-100 h-100" 
               style={{objectFit: 'cover', minHeight: '400px'}}
@@ -61,7 +63,7 @@ const ContactUs = () => {
         <div className="row mb-5">
           <div className="col-12">
             <h2 className="text-center mb-4" style={{color: 'var(--secondary)', fontWeight: '800'}}>
-              🗺️ Find Us Here
+              <FaMap style={{marginRight: '10px', color: 'var(--primary)'}} /> Find Us Here
             </h2>
             <div className="map-container">
               <iframe
@@ -82,7 +84,7 @@ const ContactUs = () => {
           <div className="col-md-4 mb-4">
             <div className="contact-action-card">
               <div>
-                <div className="contact-icon">📞</div>
+                <div className="contact-icon"><FaPhone size={24} color="var(--primary)" /></div>
                 <h3>Quick Contact</h3>
                 <p>For immediate assistance or emergency situations, call us directly. We are available during temple hours.</p>
               </div>
@@ -93,7 +95,7 @@ const ContactUs = () => {
           <div className="col-md-4 mb-4">
             <div className="contact-action-card">
               <div>
-                <div className="contact-icon">✉️</div>
+                <div className="contact-icon"><FaEnvelope size={24} color="var(--primary)" /></div>
                 <h3>Email Support</h3>
                 <p>Send us detailed inquiries about trust activities, donations, or religious programs via email.</p>
               </div>
@@ -104,7 +106,7 @@ const ContactUs = () => {
           <div className="col-md-4 mb-4">
             <div className="contact-action-card">
               <div>
-                <div className="contact-icon">🏛️</div>
+                <div className="contact-icon"><FaBuilding size={24} color="var(--primary)" /></div>
                 <h3>Visit Temple</h3>
                 <p>Experience divine blessings by visiting our temple during darshan hours. All devotees are welcome.</p>
               </div>
@@ -121,7 +123,7 @@ const ContactUs = () => {
         <div className="row">
           <div className="col-12">
             <div className="contact-cta-section">
-              <h2>🙏 Connect With Our Trust</h2>
+              <h2><FaPrayingHands style={{marginRight: '10px', color: 'var(--primary)'}} /> Connect With Our Trust</h2>
               <p className="lead">
                 Whether you seek spiritual guidance, wish to contribute to our social service activities, 
                 or need assistance with religious ceremonies, we are here to serve you.
