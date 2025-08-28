@@ -89,7 +89,8 @@ body {
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.15;
+  gap: 2px;
 }
 
 .brand-main {
@@ -97,14 +98,15 @@ body {
   font-weight: 700;
   color: var(--secondary);
   font-family: 'Noto Serif Devanagari', serif;
+  line-height: 1.15;
 }
 
 .brand-sub {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--primary);
-  margin-top: -2px;
   font-family: 'Noto Serif Devanagari', serif;
+  line-height: 1.15;
 }
 
 .navbar.transparent .brand-main {
@@ -384,7 +386,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2.618rem;
-  line-height: 1.618;
+  line-height: 1.15;
+  gap: 8px;
 }
 
 .hero-main {
@@ -398,11 +401,11 @@ body {
     0 0 30px rgba(255,215,0,0.6),
     0 0 60px rgba(255,215,0,0.3);
   letter-spacing: 0.236rem;
-  margin-bottom: 1.618rem;
+  line-height: 1.15;
 }
 
 .hero-sub {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Noto Serif Devanagari', serif;
   font-size: 2.2rem;
   font-weight: 500;
   color: #FFD700;
@@ -411,6 +414,7 @@ body {
     1px 1px 4px rgba(0,0,0,0.5),
     0 0 20px rgba(255,215,0,0.5);
   letter-spacing: 0.146rem;
+  line-height: 1.15;
 }
 
 .hero-content .verse {

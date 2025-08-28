@@ -187,7 +187,7 @@ const HowToReach = () => {
               <h3 className="mb-3" style={{color: 'var(--secondary)'}}>📞 संपर्क करें (Travel Coordination)</h3>
               <div className="contact-details">
                 <p className="mb-2"><strong>कैलाशपुर शिव राम सेवा संस्थान</strong></p>
-                <p className="mb-2">स्थान: शिव मंदिर परिसर, कैलाशपुर</p>
+                <p className="mb-2">स्‍थान: मर्यादा पुरूषोत्‍तम श्री रामचंद्र सर्वदेव मंदिर, कैलाशपुर</p>
                 <p className="mb-2">
                   <strong>ईमेल:</strong> 
                   <a href="mailto:kpsrtrust@gmail.com" style={{color: 'var(--primary)', marginLeft: '5px'}}>kpsrtrust@gmail.com</a>
